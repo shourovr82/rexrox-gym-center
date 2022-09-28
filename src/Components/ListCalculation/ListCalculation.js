@@ -2,7 +2,19 @@ import React, { useState } from 'react';
 import './ListCalculation.css'
 
 const ListCalculation = ({ list }) => {
-
+  const [breakTime, setBreakTime] = useState('')
+  const getOldbreak = localStorage.getItem('breakTime');
+  const oldBreak = JSON.parse(getOldbreak);
+  const handleBreak = (breaks) => {
+    console.log(breaks);
+    if (oldBreak) {
+      setBreakTime(breaks);
+      localStorage.setItem('breakTime', breaks);
+    } else {
+      localStorage.setItem('breakTime', breaks);
+      setBreakTime(breaks);
+    }
+  }
 
 
   return (
@@ -32,11 +44,11 @@ const ListCalculation = ({ list }) => {
       <div >
         <h4>Add a Break</h4>
         <div className='bg-dark bg-opacity-10 rounded-3 p-2  d-flex justify-content-evenly gap-4 pt-4'>
-          <p className='cursor-pointer text-white p-2 shadow rounded-5 bg-success  fw-semibold'>10s</p>
-          <p className='cursor-pointer text-white p-2 shadow rounded-5 bg-success  fw-semibold'>10s</p>
-          <p className='cursor-pointer text-white p-2 shadow rounded-5 bg-success  fw-semibold'>10s</p>
-          <p className='cursor-pointer text-white p-2 shadow rounded-5 bg-success  fw-semibold'>10s</p>
-          <p className='cursor-pointer text-white p-2 shadow rounded-5 bg-success  fw-semibold'>10s</p>
+          <p onClick={() => handleBreak(20)} className='break cursor-pointer text-white p-2 shadow rounded-5 bg-success  fw-semibold'>10s</p>
+          <p onClick={() => handleBreak(30)} className='break cursor-pointer text-white p-2 shadow rounded-5 bg-success  fw-semibold'>10s</p>
+          <p onClick={() => handleBreak(40)} className='break cursor-pointer text-white p-2 shadow rounded-5 bg-success  fw-semibold'>10s</p>
+          <p onClick={() => handleBreak(50)} className='break cursor-pointer text-white p-2 shadow rounded-5 bg-success  fw-semibold'>10s</p>
+          <p onClick={() => handleBreak(60)} className='break cursor-pointer text-white p-2 shadow rounded-5 bg-success  fw-semibold'>10s</p>
 
         </div>
       </div>
@@ -44,11 +56,11 @@ const ListCalculation = ({ list }) => {
       <div>
         <div className='bg-dark bg-opacity-10 rounded-3 p-2 my-4 pt-4  d-flex justify-content-evenly gap-4'>
           <h5>Exercise time</h5>
-          <p className='text-muted  fw-semibold'>{list} seconds</p>
+          <p className='text-muted  fw-semibold'>{list ? list : 0} seconds</p>
         </div>
         <div className='bg-dark bg-opacity-10 rounded-3 p-2 my-4 pt-4  d-flex justify-content-evenly gap-5'>
           <h5>Break time</h5>
-          <p className='text-muted fw-semibold'>15 seconds</p>
+          <p className='text-muted fw-semibold'>{breakTime ? breakTime : oldBreak ? oldBreak : 0} seconds</p>
         </div>
         <div>
           <button className='btn btn-success w-100'> Complete Activity </button>

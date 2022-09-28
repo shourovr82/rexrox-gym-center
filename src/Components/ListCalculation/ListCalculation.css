@@ -1,3 +1,8 @@
 .photo-logo {
   width: 40px;
 }
+
+.break:hover {
+  cursor: pointer;
+  background-color: #033d03 !important;
+}
