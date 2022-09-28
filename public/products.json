@@ -20,7 +20,7 @@
   {
     "id": "63347834ea14095744703131",
     "picture": "https://images.pexels.com/photos/3838389/pexels-photo-3838389.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "age": 37,
+    "age": "30-37",
     "name": "Hammer Curls ",
     "gender": "female",
     "time": 35,
@@ -29,7 +29,7 @@
   {
     "id": "633478342641bd13b9f68bbc",
     "picture": "https://images.pexels.com/photos/1092877/pexels-photo-1092877.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "age": 23,
+    "age": "20 - 40",
     "name": "Weightlifting",
     "gender": "male",
     "time": 20,
@@ -38,7 +38,7 @@
   {
     "id": "633478347bda3f13005e00a7",
     "picture": "https://images.pexels.com/photos/3838926/pexels-photo-3838926.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "age": 21,
+    "age": "21-36",
     "name": "The cable machine",
     "gender": "male",
     "time": 25,
@@ -47,7 +47,7 @@
   {
     "id": "633478348b6d102a70572dad",
     "picture": "https://images.pexels.com/photos/4720257/pexels-photo-4720257.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "age": 23,
+    "age": "23-46",
     "name": "Kettlebell Exercises ",
     "gender": "male",
     "time": 32,
