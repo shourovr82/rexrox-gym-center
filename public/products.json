@@ -3,48 +3,54 @@
     "id": "63347834fe75eb85fc2169d0",
     "picture": "https://images.pexels.com/photos/936094/pexels-photo-936094.jpeg?cs=srgb&dl=pexels-nappy-936094.jpg&fm=jpg",
     "age": 26,
-    "name": "Jenkins Nielsen",
+    "name": "Long-distance running",
     "gender": "male",
-    "time": 40
+    "time": 40,
+    "description": "In modern human society, long-distance running has multiple purposes for physical body  strength."
   },
   {
     "id": "633478344110456a4f4b87cd",
     "picture": "https://images.pexels.com/photos/116077/pexels-photo-116077.jpeg",
     "age": 26,
-    "name": "Tucker Stephens",
+    "name": "Squats & Knee Position",
     "gender": "male",
-    "time": 20
+    "time": 20,
+    "description": "Everyone has heard the phrase repeatedly, over the past 5 years or so, while squatting, “drive your knees out.” This can be a great cue when used appropriately, however, it has almost become obnoxious with everyone and their mothers yelling this phrase. "
   },
   {
     "id": "63347834ea14095744703131",
     "picture": "https://images.pexels.com/photos/3838389/pexels-photo-3838389.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "age": 37,
-    "name": "Aisha Clay",
+    "name": "Hammer Curls ",
     "gender": "female",
-    "time": 35
+    "time": 35,
+    "description": "Hammer curls are similar to biceps curls but are performed with the palms facing each other throughout the movement."
   },
   {
     "id": "633478342641bd13b9f68bbc",
     "picture": "https://images.pexels.com/photos/1092877/pexels-photo-1092877.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "age": 23,
-    "name": "Wilkinson Sharp",
+    "name": "Weightlifting",
     "gender": "male",
-    "time": 20
+    "time": 20,
+    "description": "Weightlifting generally refers to activities in which people lift weights, often in the form of dumbbells or barbells. People lift various kinds of weights for a variety of different reasons. These may include competition to determine which competitor can lift the most weight; promoting health and fitness; developing physical strength; or developing a muscular physique,"
   },
   {
     "id": "633478347bda3f13005e00a7",
-    "picture": "https://images.pexels.com/photos/4720798/pexels-photo-4720798.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "picture": "https://images.pexels.com/photos/3838926/pexels-photo-3838926.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "age": 21,
-    "name": "Casey Pace",
-    "gender": "female",
-    "time": 25
+    "name": "The cable machine",
+    "gender": "male",
+    "time": 25,
+    "description": "The cable machine is a large piece of gym equipment that has adjustable cable pulleys. The resistance of the cables allows you to perform numerous exercises in a variety of directions. Some machines have one or two cable stations, while others have multiple."
   },
   {
     "id": "633478348b6d102a70572dad",
     "picture": "https://images.pexels.com/photos/4720257/pexels-photo-4720257.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "age": 23,
-    "name": "Norris Reyes",
+    "name": "Kettlebell Exercises ",
     "gender": "male",
-    "time": 32
+    "time": 32,
+    "description": "Most kettlebell workouts include squats, lunges, crunches, and other moves that work your abs and other core muscles. Arms: Yes. The kettlebell is used as a weight for arm exercises like single-arm rows and shoulder presses."
   }
 ]

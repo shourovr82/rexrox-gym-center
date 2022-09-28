@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import './ListCalculation.css'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
+
 
 const ListCalculation = ({ item }) => {
 
@@ -31,7 +34,7 @@ const ListCalculation = ({ item }) => {
         <img className='photo-logo rounded-5' src={'https://i.ibb.co/kHhDgsD/f1891a09-6344-45a2-b763-487debff8e0e.jpg'} alt="" />
         <div className=''>
           <h6 >Shafin Rahman</h6>
-          <span className='text-black-50'>Sirajganj, Bangladesh</span>
+          <span className='text-black-50'> <FontAwesomeIcon icon={faLocationDot}></FontAwesomeIcon> Sirajganj, Bangladesh</span>
         </div>
       </div>
       <div className='bg-dark bg-opacity-10 rounded-3 p-2 my-4 pt-4  d-flex justify-content-evenly gap-4'>
