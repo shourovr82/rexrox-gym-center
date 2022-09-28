@@ -7,7 +7,7 @@ import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 
 
 const ListCalculation = ({ item }) => {
-
+  //  handle newBreak time
   let newTime = 0;
   for (const list of item) {
     newTime = newTime + list.time;
