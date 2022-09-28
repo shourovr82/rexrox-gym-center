@@ -27,14 +27,14 @@ const Blog = () => {
             <h5 className="card-title">What does useEffect() do?</h5>
             <p className="card-text">It’s a hook that lets do side effects inside function components. It takes a function as a first argument, and an array of dependencies as the second, <br />
 
-              <div className=' ps-3'>
-                i. Once, when component mounts <br />
-                ii. fetch API data.<br />
-                iii.validating input field. <br />
-                iv.  live filtering.<br />
-                v.  trigger animation on new array value.<br />
-                vi.  update paragraph list on fetched API data update.<br />
-              </div>
+
+              i. Once, when component mounts <br />
+              ii. fetch API data.<br />
+              iii.validating input field. <br />
+              iv.  live filtering.<br />
+              v.  trigger animation on new array value.<br />
+              vi.  update paragraph list on fetched API data update.<br />
+
             </p>
           </div>
         </div>

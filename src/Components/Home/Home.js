@@ -19,7 +19,7 @@ const Home = () => {
   }
 
   return (
-    <div className=' home-section'>
+    <div className=' home-section '>
       <div className='col px-4 pt-5'>
         <h3>REXROX</h3>
         <h5 >Select your Exercise</h5>

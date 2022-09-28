@@ -1,4 +1,6 @@
-.home-section {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
+@media only screen and (min-width: 768px) {
+  .home-section {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+  }
 }
