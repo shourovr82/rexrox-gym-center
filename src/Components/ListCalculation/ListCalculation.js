@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './ListCalculation.css'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const ListCalculation = ({ list }) => {
   const [breakTime, setBreakTime] = useState('')
@@ -15,6 +17,8 @@ const ListCalculation = ({ list }) => {
       setBreakTime(breaks);
     }
   }
+  const notify = () => toast("Completed Activity!");
+
 
 
   return (
@@ -63,7 +67,8 @@ const ListCalculation = ({ list }) => {
           <p className='text-muted fw-semibold'>{breakTime ? breakTime : oldBreak ? oldBreak : 0} seconds</p>
         </div>
         <div>
-          <button className='btn btn-success w-100'> Complete Activity </button>
+          <button onClick={notify} className='btn btn-success w-100'> Complete Activity </button>
+          <ToastContainer />
         </div>
       </div>
     </div>

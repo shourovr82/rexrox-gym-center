@@ -35,9 +35,6 @@ const Blog = () => {
                 v.  trigger animation on new array value.<br />
                 vi.  update paragraph list on fetched API data update.<br />
               </div>
-
-
-
             </p>
           </div>
         </div>

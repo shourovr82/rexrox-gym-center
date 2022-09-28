@@ -3,9 +3,7 @@ import React from 'react';
 const Exercise = ({ exercise, addToList }) => {
   const { picture, name, age, time } = exercise;
 
-  const handleTime = () => {
 
-  }
 
 
   return (
