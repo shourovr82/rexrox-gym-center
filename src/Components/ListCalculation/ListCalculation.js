@@ -13,12 +13,10 @@ const ListCalculation = ({ item }) => {
     newTime = newTime + list.time;
   }
 
-
   const [breakTime, setBreakTime] = useState('')
   const getOldbreak = localStorage.getItem('breakTime');
   const oldBreak = JSON.parse(getOldbreak);
   const handleBreak = (breaks) => {
-    console.log(breaks);
     if (oldBreak) {
       setBreakTime(breaks);
       localStorage.setItem('breakTime', breaks);
@@ -27,7 +25,7 @@ const ListCalculation = ({ item }) => {
       setBreakTime(breaks);
     }
   }
-  const notify = () => toast("Completed Activity!");
+  const notify = () => toast("Fully Completed Activity!");
   return (
     <div className=' p-3 bg-white d-flex flex-column  py-5 '>
       <div className='d-flex  align-items-center gap-4 pb-4'>
