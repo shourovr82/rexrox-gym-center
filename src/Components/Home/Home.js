@@ -5,7 +5,7 @@ import './Home.css'
 
 const Home = () => {
   const [exercises, setExercise] = useState([])
-  const [list, setList] = useState('')
+  const [list, setList] = useState([])
 
   useEffect(() => {
     fetch('products.json')
@@ -13,15 +13,18 @@ const Home = () => {
       .then(data => setExercise(data))
   }, [])
 
-  const addToList = (listAdded) => {
-    let time = listAdded;
-    setList(time)
+  const addToList = (item) => {
+    const newLIst = [...list, item]
+    setList(newLIst)
   }
 
   return (
     <div className=' home-section '>
       <div className='col px-4 pt-5'>
-        <h3>REXROX</h3>
+        <div className='d-flex align-items-center gap-2 mb-3 '>
+          <img className='site-brand' src="https://i.ibb.co/km1LJqM/image-removebg-preview.png" alt="" />
+          <h4 className='text-success fw-bold'>REXROX GYM CENTER</h4>
+        </div>
         <h5 >Select your Exercise</h5>
         <div className="row row-cols-1 pt-4 row-cols-md-3 g-4">
           {
@@ -31,7 +34,7 @@ const Home = () => {
 
       </div>
       <div>
-        <ListCalculation list={list}></ListCalculation>
+        <ListCalculation item={list}></ListCalculation>
       </div>
     </div>
   );

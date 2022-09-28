@@ -14,7 +14,7 @@ const Exercise = ({ exercise, addToList }) => {
           <h5 className="card-title">{name}</h5>
           <p className='fw-semibold text-muted'>For Age : {age}</p>
           <p className='fw-semibold text-muted'>Time Required: {time}s</p>
-          <button onClick={() => addToList(time)} className='btn btn-success w-100'>Add to List</button>
+          <button onClick={() => addToList(exercise)} className='btn btn-success w-100'>Add to List</button>
         </div>
       </div>
     </div>

@@ -4,3 +4,7 @@
     grid-template-columns: 3fr 1fr;
   }
 }
+
+.site-brand {
+  width: 30px;
+}

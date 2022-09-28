@@ -3,7 +3,14 @@ import './ListCalculation.css'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const ListCalculation = ({ list }) => {
+const ListCalculation = ({ item }) => {
+
+  let newTime = 0;
+  for (const list of item) {
+    newTime = newTime + list.time;
+  }
+
+
   const [breakTime, setBreakTime] = useState('')
   const getOldbreak = localStorage.getItem('breakTime');
   const oldBreak = JSON.parse(getOldbreak);
@@ -18,9 +25,6 @@ const ListCalculation = ({ list }) => {
     }
   }
   const notify = () => toast("Completed Activity!");
-
-
-
   return (
     <div className=' p-3 bg-white d-flex flex-column  py-5 '>
       <div className='d-flex  align-items-center gap-4 pb-4'>
@@ -53,14 +57,13 @@ const ListCalculation = ({ list }) => {
           <p onClick={() => handleBreak(40)} className='break cursor-pointer text-white p-2 shadow rounded-5 bg-success  fw-semibold'>40s</p>
           <p onClick={() => handleBreak(50)} className='break cursor-pointer text-white p-2 shadow rounded-5 bg-success  fw-semibold'>50s</p>
           <p onClick={() => handleBreak(60)} className='break cursor-pointer text-white p-2 shadow rounded-5 bg-success  fw-semibold'>60s</p>
-
         </div>
       </div>
       {/* exercise details  */}
       <div>
         <div className='bg-dark bg-opacity-10 rounded-3 p-2 my-4 pt-4  d-flex justify-content-evenly gap-4'>
           <h5>Exercise time</h5>
-          <p className='text-muted  fw-semibold'>{list ? list : 0} seconds</p>
+          <p className='text-muted  fw-semibold'><span>{newTime}</span> seconds</p>
         </div>
         <div className='bg-dark bg-opacity-10 rounded-3 p-2 my-4 pt-4  d-flex justify-content-evenly gap-5'>
           <h5>Break time</h5>
