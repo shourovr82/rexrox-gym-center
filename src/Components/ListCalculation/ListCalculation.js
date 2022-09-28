@@ -44,11 +44,11 @@ const ListCalculation = ({ list }) => {
       <div >
         <h4>Add a Break</h4>
         <div className='bg-dark bg-opacity-10 rounded-3 p-2  d-flex justify-content-evenly gap-4 pt-4'>
-          <p onClick={() => handleBreak(20)} className='break cursor-pointer text-white p-2 shadow rounded-5 bg-success  fw-semibold'>10s</p>
-          <p onClick={() => handleBreak(30)} className='break cursor-pointer text-white p-2 shadow rounded-5 bg-success  fw-semibold'>10s</p>
-          <p onClick={() => handleBreak(40)} className='break cursor-pointer text-white p-2 shadow rounded-5 bg-success  fw-semibold'>10s</p>
-          <p onClick={() => handleBreak(50)} className='break cursor-pointer text-white p-2 shadow rounded-5 bg-success  fw-semibold'>10s</p>
-          <p onClick={() => handleBreak(60)} className='break cursor-pointer text-white p-2 shadow rounded-5 bg-success  fw-semibold'>10s</p>
+          <p onClick={() => handleBreak(20)} className='break cursor-pointer text-white p-2 shadow rounded-5 bg-success  fw-semibold'>20s</p>
+          <p onClick={() => handleBreak(30)} className='break cursor-pointer text-white p-2 shadow rounded-5 bg-success  fw-semibold'>30s</p>
+          <p onClick={() => handleBreak(40)} className='break cursor-pointer text-white p-2 shadow rounded-5 bg-success  fw-semibold'>40s</p>
+          <p onClick={() => handleBreak(50)} className='break cursor-pointer text-white p-2 shadow rounded-5 bg-success  fw-semibold'>50s</p>
+          <p onClick={() => handleBreak(60)} className='break cursor-pointer text-white p-2 shadow rounded-5 bg-success  fw-semibold'>60s</p>
 
         </div>
       </div>

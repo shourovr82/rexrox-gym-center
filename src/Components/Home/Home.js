@@ -18,8 +18,6 @@ const Home = () => {
     setList(time)
   }
 
-
-
   return (
     <div className=' home-section'>
       <div className='col px-4 pt-5'>
