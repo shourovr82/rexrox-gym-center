@@ -3,7 +3,7 @@ import Home from './Components/Home/Home';
 
 function App() {
   return (
-    <div className='bg-danger'>
+    <div className='bg-success  bg-opacity-10'>
       <Home></Home>
     </div>
   );

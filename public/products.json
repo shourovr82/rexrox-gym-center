@@ -1,0 +1,50 @@
+[
+  {
+    "id": "63347834fe75eb85fc2169d0",
+    "picture": "https://images.pexels.com/photos/936094/pexels-photo-936094.jpeg?cs=srgb&dl=pexels-nappy-936094.jpg&fm=jpg",
+    "age": 26,
+    "name": "Jenkins Nielsen",
+    "gender": "male",
+    "time": 40
+  },
+  {
+    "id": "633478344110456a4f4b87cd",
+    "picture": "https://images.pexels.com/photos/116077/pexels-photo-116077.jpeg",
+    "age": 26,
+    "name": "Tucker Stephens",
+    "gender": "male",
+    "time": 20
+  },
+  {
+    "id": "63347834ea14095744703131",
+    "picture": "https://images.pexels.com/photos/3838389/pexels-photo-3838389.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "age": 37,
+    "name": "Aisha Clay",
+    "gender": "female",
+    "time": 35
+  },
+  {
+    "id": "633478342641bd13b9f68bbc",
+    "picture": "https://images.pexels.com/photos/1092877/pexels-photo-1092877.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "age": 23,
+    "name": "Wilkinson Sharp",
+    "gender": "male",
+    "time": 20
+  },
+  {
+    "id": "633478347bda3f13005e00a7",
+    "picture": "https://images.pexels.com/photos/4720798/pexels-photo-4720798.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "age": 21,
+    "name": "Casey Pace",
+    "gender": "female",
+    "time": 25
+  },
+  {
+    "id": "633478348b6d102a70572dad",
+    "picture": "https://images.pexels.com/photos/4720257/pexels-photo-4720257.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "age": 23,
+    "name": "Norris Reyes",
+    "gender": "male",
+    "time": 32
+  }
+]
