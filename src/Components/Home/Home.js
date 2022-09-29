@@ -26,7 +26,7 @@ const Home = () => {
           <h4 className='text-success fw-bold'>REXROX GYM CENTER</h4>
         </div>
         <h5 >Select your Exercise</h5>
-        <div className="row row-cols-1 pt-4 row-cols-md-3 g-4">
+        <div className="row row-cols-1 pt-4 row-cols-md-2 row-cols-lg-3 g-4">
           {
             exercises.map(exercise => <Exercises exercise={exercise} key={exercise.id} addToList={addToList}></Exercises>)
           }
