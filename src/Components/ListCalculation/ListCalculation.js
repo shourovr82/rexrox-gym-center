@@ -59,14 +59,15 @@ const ListCalculation = ({ item }) => {
         </div>
       </div>
       {/* exercise details  */}
-      <div>
-        <div className='bg-dark bg-opacity-10 rounded-3 p-2 my-4 pt-4  d-flex justify-content-evenly gap-4'>
+      <div className='pt-3'>
+        <h4>Exercise Details</h4>
+        <div className='bg-dark bg-opacity-10 rounded-3 pt-4 my-4 d-flex justify-content-evenly gap-4'>
           <h5>Exercise time</h5>
           <p className='text-muted  fw-semibold'><span>{newTime}</span> seconds</p>
         </div>
         <div className='bg-dark bg-opacity-10 rounded-3 p-2 my-4 pt-4  d-flex justify-content-evenly gap-5'>
           <h5>Break time</h5>
-          <p className='text-muted fw-semibold'>{breakTime ? breakTime : oldBreak ? oldBreak : 0} seconds</p>
+          <p className='text-muted fw-semibold'>{breakTime ? breakTime : oldBreak ? oldBreak : 0} seconds </p>
         </div>
         <div>
           <button onClick={notify} className='btn btn-success w-100'> Complete Activity </button>
