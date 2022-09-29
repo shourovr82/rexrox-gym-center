@@ -7,23 +7,21 @@ import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 
 
 const ListCalculation = ({ item }) => {
+  const [breakTime, setBreakTime] = useState('');
+
   //  handle newBreak time
   let newTime = 0;
   for (const list of item) {
     newTime = newTime + list.time;
   }
 
-  const [breakTime, setBreakTime] = useState('')
   const getOldbreak = localStorage.getItem('breakTime');
   const oldBreak = JSON.parse(getOldbreak);
+
+  // handle break
   const handleBreak = (breaks) => {
-    if (oldBreak) {
-      setBreakTime(breaks);
-      localStorage.setItem('breakTime', breaks);
-    } else {
-      localStorage.setItem('breakTime', breaks);
-      setBreakTime(breaks);
-    }
+    setBreakTime(breaks)
+    localStorage.setItem('breakTime', breaks);
   }
   const notify = () => toast("Fully Completed Activity!");
   return (
@@ -53,11 +51,11 @@ const ListCalculation = ({ item }) => {
       <div >
         <h4>Add a Break</h4>
         <div className='bg-dark bg-opacity-10 rounded-3 p-2  d-flex justify-content-evenly gap-4 pt-4'>
-          <p onClick={() => handleBreak(20)} className='break cursor-pointer text-white p-2 shadow rounded-5 bg-success  fw-semibold'>20s</p>
-          <p onClick={() => handleBreak(30)} className='break cursor-pointer text-white p-2 shadow rounded-5 bg-success  fw-semibold'>30s</p>
-          <p onClick={() => handleBreak(40)} className='break cursor-pointer text-white p-2 shadow rounded-5 bg-success  fw-semibold'>40s</p>
-          <p onClick={() => handleBreak(50)} className='break cursor-pointer text-white p-2 shadow rounded-5 bg-success  fw-semibold'>50s</p>
-          <p onClick={() => handleBreak(60)} className='break cursor-pointer text-white p-2 shadow rounded-5 bg-success  fw-semibold'>60s</p>
+          <p onClick={() => handleBreak(20)} className='break text-white p-2 shadow rounded-5 bg-success  fw-semibold'>20s</p>
+          <p onClick={() => handleBreak(30)} className='break  text-white p-2 shadow rounded-5 bg-success  fw-semibold'>30s</p>
+          <p onClick={() => handleBreak(40)} className='break  text-white p-2 shadow rounded-5 bg-success  fw-semibold'>40s</p>
+          <p onClick={() => handleBreak(50)} className='break  text-white p-2 shadow rounded-5 bg-success  fw-semibold'>50s</p>
+          <p onClick={() => handleBreak(60)} className='break  text-white p-2 shadow rounded-5 bg-success  fw-semibold'>60s</p>
         </div>
       </div>
       {/* exercise details  */}
